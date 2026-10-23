@@ -1,5 +1,10 @@
 import { Environment as DreiEnvironment } from "@react-three/drei";
 
 export default function Environment() {
-  return <DreiEnvironment preset="city" background={false} />;
+  return (
+    <DreiEnvironment
+      files="/hdr/preller_drive_2k.hdr"
+      environmentIntensity={0.3}
+    />
+  );
 }

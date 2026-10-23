@@ -1,14 +1,13 @@
-import { PerspectiveCamera } from '@react-three/drei'
+import { PerspectiveCamera } from "@react-three/drei";
 
-export default function Camera()
-{
-    return (
-        <PerspectiveCamera
-            makeDefault
-            fov={45}
-            near={0.1}
-            far={200}
-            position={[4, 3, 6]}
-        />
-    )
+export default function Camera() {
+  return (
+    <PerspectiveCamera
+      makeDefault
+      fov={45}
+      near={0.1}
+      far={500}
+      position={[-30, 18, 40]}
+    />
+  );
 }
