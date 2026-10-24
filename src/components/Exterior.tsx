@@ -67,7 +67,7 @@ export default function Exterior() {
       <Backdrop />
       <fog attach="fog" args={["#101217", 45, 160]} />
 
-      <mesh rotation-x={-Math.PI / 2} position-y={-0.1} position-x={CENTER_X}>
+      <mesh rotation-x={-Math.PI / 2} position-y={-0.1} position-x={CENTER_X} receiveShadow>
         <planeGeometry args={[CONCRETE_WIDTH, CONCRETE_DEPTH]} />
         <meshStandardMaterial
           map={concreteDiff}
@@ -81,6 +81,7 @@ export default function Exterior() {
       <mesh
         rotation={[-Math.PI / 2, 0, 0]}
         position={[CENTER_X, 0, ROAD_START + ROAD_WIDTH / 2]}
+        receiveShadow
       >
         <planeGeometry args={[ROAD_LENGTH, ROAD_WIDTH]} />
         <meshStandardMaterial
