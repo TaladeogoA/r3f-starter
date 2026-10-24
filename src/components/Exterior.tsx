@@ -65,7 +65,7 @@ export default function Exterior() {
   return (
     <group>
       <Backdrop />
-      <fog attach="fog" args={["#05060a", 70, 260]} />
+      <fog attach="fog" args={["#101217", 45, 160]} />
 
       <mesh rotation-x={-Math.PI / 2} position-y={-0.1} position-x={CENTER_X}>
         <planeGeometry args={[CONCRETE_WIDTH, CONCRETE_DEPTH]} />

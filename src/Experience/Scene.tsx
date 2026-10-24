@@ -4,7 +4,7 @@ import Exterior from "../components/Exterior";
 export default function Scene() {
   return (
     <>
-      <color attach="background" args={["#05060a"]} />
+      <color attach="background" args={["#101217"]} />
 
       <Building />
       <Exterior />

@@ -11,11 +11,11 @@ export default function Backdrop() {
   return (
     <mesh position={[5, 33, -3]}>
       <cylinderGeometry
-        args={[300, 300, 190, 64, undefined, true, 2.18, 1.92]}
+        args={[300, 300, 190, 64, undefined, true, 1.68, 1.92]}
       />
       <meshBasicMaterial
         map={texture}
-        toneMapped={false}
+        color="#7f889c"
         fog={false}
         side={THREE.BackSide}
       />
